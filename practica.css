@@ -1,0 +1,242 @@
+html, body {
+    margin: 0px;
+}
+
+.hamburguesa {
+    display: none;
+}
+
+.header, .footer {
+    background-color: #282a2b;
+    color: #e44d26;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px 10px 30px;
+    box-sizing: border-box; /*----No deja extenderse----*/
+}
+.header .logo {  /*----AJUSTA EL TAMAÑO----*/
+    width: 50px;
+    height: 50px;
+}
+
+.header .logo img,
+.imagen-principal img { /*----LO AJUSTA A SU DIV PARA RESPONSIVE----*/
+    width: 100%;
+    height: auto;
+}
+
+.nav ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+}
+
+.nav ul li {
+    margin-left: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    font-weight: bolder;
+}
+
+a:link {
+    color: #e44d26;
+    text-decoration: none;
+}
+
+a:visited {
+    color: rgba(228, 77, 38, 0.6);
+}
+
+a:hover {
+    color: rgba(228, 77, 38, 0.6);
+    text-decoration: none;
+}
+
+.imagen-principal { /*----AJUSTA EL TAMAÑO----*/
+    width: 80%;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.que-somos {
+    background-color: #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+}
+
+.logo-sociales {
+    display: flex;
+}
+
+.logo-somos {
+    width: 70px;
+    height: 70px;
+}
+
+.logo-chico img {
+    width: 30px;
+    height: 30px;
+    margin-left: 15px;
+}
+
+.logo-somos img {
+    width: 100%;
+    height: auto;
+}
+
+.texto-somos {
+    max-width: 800px;
+    text-align: left;
+}
+
+.texto-somos .titulo {
+    color: #e44d26;
+    font-size: 1.5em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.texto-somos p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9em;
+}
+
+.nosotras {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px;
+    max-width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.persona {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.persona:hover {
+    filter: grayscale(60%);
+}
+
+.persona .descripcion-persona {
+    margin-left: 60px;
+    text-align: center;
+    color: #e44d26;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9em;
+}
+
+.persona .avatar {
+    width: 150px;
+    height: 150px;
+}
+
+.persona .avatar img {
+    width: 100%;
+    height: auto;
+}
+
+.persona .nombre-persona {
+    font-weight: bold;
+}
+
+.contacto {
+    display: flex;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8em;
+}
+
+.redes {
+    margin-right: 15px;
+}
+
+.redes img {
+    width: 30px;
+    height: 30px;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+
+/*-------------MEDIA QUERYES----------*/
+
+@media screen and (max-width: 480px) {
+
+    .nav ul {
+        display: none;
+    }
+
+    .hamburguesa {
+        display: block;
+    }
+
+    .nav:hover ul {
+        display: flex;
+    }
+
+    .nav {
+        position: relative;
+    }
+
+    .nav ul {
+        position: absolute;
+        right: 0px;
+        flex-direction: column;
+        width: 200px;
+        align-items: center;
+        background: white;
+        text-transform: uppercase;
+        padding: 0px;
+    }
+
+    .nav ul li {
+        margin-left: 0px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .imagen-principal {
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 0;
+    }
+
+    .texto-somos p {
+        font-size: 0.8em;
+    }
+
+    .logo-somos, .logo-sociales {
+        display: none;
+    }
+
+    .nosotras, .persona {
+        flex-direction: column;
+        align-content: center;
+    }
+
+    .persona .descripcion-persona {
+        margin-left: 0;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .redes img {
+        width: 20px;
+        height: 20px;
+        margin-top: 5px;
+        margin-left: 10px;
+        margin-right: auto;   
+    }
+
+}

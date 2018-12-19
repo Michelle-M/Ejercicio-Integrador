@@ -1,0 +1,117 @@
+@font-face {
+    font-family: "IBM";
+    src: url(Nouveau_IBM_Stretch.woff);
+}
+
+html, body {
+    margin: 0px;
+}
+
+.hamburguesa {
+    display: none;
+}
+
+.header, .footer {
+    background-color: #282a2b;
+    color: #e44d26;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px 10px 30px;
+    box-sizing: border-box; /*----No deja extenderse----*/
+}
+.header .logo {  /*----AJUSTA EL TAMAÑO----*/
+    width: 50px;
+    height: 50px;
+}
+
+.header .logo img { /*----LO AJUSTA A SU DIV PARA RESPONSIVE----*/
+    width: 100%;
+    height: auto;
+}
+
+.nav ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+}
+
+.nav ul li {
+    margin-left: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    font-weight: bolder;
+}
+
+a:link {
+    color: #e44d26;
+    text-decoration: none;
+}
+
+a:visited {
+    color: rgba(228, 77, 38, 0.6);
+}
+
+a:hover {
+    color: rgba(228, 77, 38, 0.6);
+    text-decoration: none;
+}
+
+.contenedor-servicios {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: wrap;
+    align-content: space-between;
+    padding: 10px;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contenedor-servicios .circulo {
+    display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+    margin: 10px auto;
+    padding: 3%;
+    width: 250px;
+    height: 250px;
+    background-color: rgba(228, 77, 38, 0.3);
+    border-radius: 50%;
+}
+
+.titulo {
+    font-family: 'IBM';
+    font-size: 2em;
+    text-transform: uppercase;
+    color: #282a2b;
+    border-bottom: 1px #282a2b dotted;
+}
+
+.descripcion-puesto {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.75em;
+
+}
+
+
+
+.contacto {
+    display: flex;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8em;
+}
+
+.redes {
+    margin-right: 15px;
+}
+
+.redes img {
+    width: 30px;
+    height: 30px;
+    margin-left: 15px;
+    margin-top: 10px;
+}
